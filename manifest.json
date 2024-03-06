@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Speed Reader",
+  "description": "Simple speed reader extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "speedreader.html",
+    "default_icon": "speedreader_icon.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "js": ["speedreader.js"],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ]
+}
